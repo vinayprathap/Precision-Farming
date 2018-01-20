@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/crop_monitor">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="builders.superagro.CropPrediction">
+    <LinearLayout
+        android:id="@+id/topCrops"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:id="@+id/topCropHeading"
+            android:text="Top Crops for Kurlur"
+            android:paddingBottom="5dp"
+            />
+
+        <com.github.mikephil.charting.charts.BarChart
+    android:id="@+id/horizontalChart"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    >
+
+</com.github.mikephil.charting.charts.BarChart>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/light_grey"
+        android:layout_below="@+id/topCrops"
+        android:id="@+id/temp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="Temperature Variations(°C)"
+            android:paddingBottom="5dp"
+            />
+<com.github.mikephil.charting.charts.LineChart
+    android:id="@+id/tempChart"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    >
+
+</com.github.mikephil.charting.charts.LineChart>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/temp"
+
+        android:background="@color/light_grey"
+        android:id="@+id/precipi"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="Rainfall Variation (mm)"
+            android:paddingBottom="5dp"
+            />
+<com.github.mikephil.charting.charts.LineChart
+    android:id="@+id/precipitationChart"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    >
+
+</com.github.mikephil.charting.charts.LineChart>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:background="@color/light_grey"
+        android:layout_below="@+id/precipi"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="Soil Quality Variation (index)"
+            android:paddingBottom="5dp"
+            />
+<com.github.mikephil.charting.charts.LineChart
+    android:id="@+id/soilChart"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    >
+
+</com.github.mikephil.charting.charts.LineChart>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>
+
+</ScrollView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/crop_monitor"
+        android:layout_alignParentBottom="true"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:text="Monitor Farm"/>
+</RelativeLayout>

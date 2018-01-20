@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Green Chain</string>
+    <string name="title_activity_farm_select">Farm Location</string>
+    <string name="title_fingerprint">One-touch Authentication</string>
+    <string name="desc_fingerprint">Please place your fingertip on the scanner to verify your Aadhaar identity</string>
+    <string name="note">(Fingerprint sign in makes your app login much faster. Your device should have at least one fingerprint registered in device settings)</string>
+    <string name="title_activity_home">Fingerprint</string>
+    <string name="activity_home_desc">You have successfully logged in with fingerprint authentication</string>
+    <string name="activity_home_note">Close and re-open the app to see the fingerprint auth screen again</string>
+
+    <string name="title_activity_digi_locker_confirm">DigiLockerConfirmActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="title_activity_esign_actiivty">ESignActiivty</string>
+    <string name="apply">Apply for KAPY</string>
+    <string name="monitor">Track Saplings</string>
+    <string name="review">Review Farm</string>
+
+</resources>

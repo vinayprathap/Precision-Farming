@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="dry_trees">
+        <item>Neem</item>
+        <item>Ficus</item>
+        <item>Honge</item>
+        <item>Tapasi</item>
+    </string-array>
+    <string-array name="moist_trees">
+        <item>Teak</item>
+        <item>Nandi</item>
+        <item>Mathi</item>
+        <item>Sandal</item>
+    </string-array>
+    <string-array name="evergreen_trees">
+        <item>Canes</item>
+        <item>Mango</item>
+        <item>White Cedar</item>
+        <item>Bamboo</item>
+    </string-array>
+
+</resources>
