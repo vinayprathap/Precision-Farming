@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Green Chain</string>
+    <string name="app_name">Farmer Loans</string>
     <string name="title_activity_farm_select">Farm Location</string>
     <string name="title_fingerprint">One-touch Authentication</string>
     <string name="desc_fingerprint">Please place your fingertip on the scanner to verify your Aadhaar identity</string>
